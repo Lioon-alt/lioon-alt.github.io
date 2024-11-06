@@ -1,1 +1,136 @@
-1231331
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游路线推荐</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            header nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+            }
+
+        .hero {
+            background-image: url('banner-image.jpg'); /* 这里放置你选择的背景图 */
+            height: 400px;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+            .hero h1 {
+                font-size: 3em;
+            }
+
+            .hero button {
+                padding: 10px 20px;
+                font-size: 1.2em;
+                margin-top: 20px;
+                border: none;
+                background-color: #FF5733;
+                color: white;
+                cursor: pointer;
+            }
+
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .route-card {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+            .route-card img {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">旅游网站</div>
+        <nav>
+            <a href="#">主页</a>
+            <a href="#">路线推荐</a>
+            <a href="#">旅游攻略</a>
+            <a href="#">联系我们</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>探索未被发现的美丽</h1>
+        <a href="details.html"><button>开始探索</button></a> <!-- 修改为链接到第二个页面 -->
+    </div>
+
+    <div class="container">
+        <h2>推荐路线</h2>
+        <div class="route-card">
+            <img src="route1.jpg" alt="路线1">
+            <h3>路线名称1</h3>
+            <p>简短描述，适合喜欢探险的你。</p>
+            <p>旅行天数: 5天</p>
+            <a href="details.html"><button>查看详情</button></a> <!-- 修改为链接到第二个页面 -->
+        </div>
+        <div class="route-card">
+            <img src="route2.jpg" alt="路线2">
+            <h3>路线名称2</h3>
+            <p>简短描述，适合家庭旅游的路线。</p>
+            <p>旅行天数: 3天</p>
+            <a href="details.html"><button>查看详情</button></a> <!-- 修改为链接到第二个页面 -->
+        </div>
+        <div class="route-card">
+            <img src="route3.jpg" alt="路线3">
+            <h3>路线名称3</h3>
+            <p>简短描述，文化之旅的绝佳选择。</p>
+            <p>旅行天数: 7天</p>
+            <a href="details.html"><button>查看详情</button></a> <!-- 修改为链接到第二个页面 -->
+        </div>
+    </div>
+
+    <footer>
+        <p>联系信息 | 网站地图 | 隐私政策 | 社交媒体</p>
+    </footer>
+
+</body>
+</html>
+
